@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--a Bulma tutorial video-->
+<!--https://www.youtube.com/watch?v=IiPQYQT2-wg&t=2463s-->
+<div class="container">
+    <div class="block">
+        <!--h1 , h2 は区別されない。同じ文字の大きさになる-->
+        <h1>Hello world</h1>
+        <h2>Hello world</h2>
+        <!--.title で大きくなる-->
+        <h1 class="title"> Hello wold</h1>
+
+        <!--is-X でサイズを指定している-->
+        <!--タグ名は"スタイルに対して"意味をなさない-->
+        <h1 class="title is-1">Hello world</h1>
+        <h2 class="title is-2">Hello world</h2>
+        <h3 class="title is-3">Hello world</h3>
+        <h4 class="title is-4">Hello world</h4>
+        <h5 class="title is-5">Hello world</h5>
+        <h6 class="title is-6">Hello world</h6>
+    </div>
+    <!--lorem10 + tab で10文字分のlorem ipsum〜が出せる(emmet)-->
+    <div class="block">
+        <!--content でpaddingが入る-->
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, sunt.</p>
+        <!--is-small で小さくなる-->
+        <p class="content is-small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, sunt.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, sunt.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, sunt.</p>
+    </div>
+    <!--BUTTONS-->
+    <div class="block">
+        <!--ボタンの種類も色々-->
+        <button class="button">Button</button>
+        <button class="button is-white">Button</button>
+        <button class="button is-light">Button</button>
+        <button class="button is-dark">Button</button>
+        <button class="button is-black">Button</button>
+        <!--動画だと白いが、0.7.1だと青くなる-->
+        <button class="button is-link">Button</button>
+    </div>
+    <!--マウスオーバー時のエフェクトはbulmaが勝手にやってくれる-->
+    <div class="block">
+        <a href="" class="button is-primary"></a>
+        <!--classを重ねて大きさや種類を指定-->
+        <a href="" class="button is-primary is-small">Primary</a>
+        <!--is-outlined 背景が白で文字色で文字と枠線を強調-->
+        <a href="" class="button is-primary is-outlined">Primary</a>
+        <!--is-inverted で枠と背景色の反転　ただし、warningは文字が黄色のため（？）背景が黒になる-->
+        <a href="" class="button is-primary is-inverted">Primary</a>
+    </div>
+
+    <!--state-->
+    <div class="block">
+        <a href="" class="button is-hovered">Hovered</a>
+        <a href="" class="button is-focused">Focused</a>
+        <a href="" class="button is-active">Active</a>
+        <a href="" class="button is-loading">Loading</a>
+        <a href="" class="button" disabled>Disabled</a>
+    </div>
+
+    <!--自動的に幅など調整される-->
+    <!--BOX-->
+    <div class="block">
+        <div class="box">
+            <h1 class="title">Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, qui.</p>
+        </div>
+    </div>
+
+    <!--NOTIFICATION-->
+    <div class="block">
+        <div class="notification">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, iusto?
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
