@@ -10,5 +10,5 @@ https://www.youtube.com/watch?v=IiPQYQT2-wg
  ####手を動かして作ったもの
  
  ダッシュボード風  
- https://shotanue.github.io/bulma-learning/dashboard/
+ https://shotanue.github.io/bulma-learning/sandbox/dashboard/
  
