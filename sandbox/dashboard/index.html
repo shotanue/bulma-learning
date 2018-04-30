@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bulma Sandbox</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--header-->
+<nav class="navbar has-shadow is-dark">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox"
+                 width="112" height="28">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+    </div>
+    <div class="navbar-menu">
+        <div class="navbar-start">
+            <!--dropdownの出し分けみたいなのはbulmaがやってくれる-->
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a href="" class="navbar-link">Doc</a>
+                <div class="navbar-dropdown is-boxed">
+                    <a href="" class="navbar-item is-active">Sample1</a>
+                    <a href="" class="navbar-item">Sample2</a>
+                    <a href="" class="navbar-item">Sample3</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
+                           data-social-target="http://localhost:4000" target="_blank"
+                           href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+              <span class="icon">
+                <i class="fa fa-twitter"></i>
+              </span>
+                            <span>
+                Tweet
+              </span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="button is-primary"
+                           href="https://github.com/jgthms/bulma/releases/download/0.7.0/bulma-0.7.0.zip">
+              <span class="icon">
+                <i class="fa fa-download"></i>
+              </span>
+                            <span>Download</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="columns">
+        <!--ここの階層で縦割りになる-->
+        <!--left-sidebar-->
+        <aside class="column is-2 section">
+            <p class="menu-label">Navigation</p>
+            <ul class="menu-list">
+                <li>
+                    <a href="" class="is-active"> <span class="icon"><i class="fa fa-home"></i></span> Home</a>
+                </li>
+                <li>
+                    <a href="#" class="">
+                        <span class="icon"><i class="fa fa-table"></i></span> Links
+                    </a>
+                    <ul>
+                        <li><a href=""><span class="icon is-small"><i class="fa fa-link"></i>Link</span></a></li>
+                        <li><a href=""><span class="icon is-small"><i class="fa fa-link"></i>Link</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="">
+                        <span class="icon"><i class="fa fa-info"></i></span> About
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!--メインのコンテンツ-->
+        <div class="column">
+            <!--この中でsectionで区切ってあげると段ができる-->
+            <div class="section">
+                <div class="card">
+                    <div class="card-header"><p class="card-header-title">Card one</p></div>
+                    <div class="card-content">
+                        <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam
+                            aspernatur dicta dolores dolorum eveniet exercitationem, ipsum, labore laborum nostrum
+                            numquam perspiciatis quae quasi similique sunt tempore vero voluptates voluptatibus.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><p class="card-header-title">Card two</p></div>
+                    <div class="card-content">
+                        <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, vitae!
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header"><p class="card-header-title">Card three</p></div>
+                    <div class="card-content">
+                        <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus neque
+                            nesciunt numquam quasi quos soluta tempora vero. Aliquid animi consequuntur ea fuga iste,
+                            iure laboriosam, laudantium natus neque nobis nostrum quia repellendus reprehenderit sint
+                            voluptatum. Consectetur culpa est eum minima quam. Adipisci autem enim inventore itaque
+                            laudantium odit repellat temporibus.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="columns">
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-header"><p class="card-header-title">Title</p></div>
+                            <div class="card-content">
+                                <div class="content">Content</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-header"><p class="card-header-title">Title</p></div>
+                            <div class="card-content">
+                                <div class="content">Content</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-header"><p class="card-header-title">Title</p></div>
+                            <div class="card-content">
+                                <div class="content">Content</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <div class="card-header"><p class="card-header-title">Title</p></div>
+                            <div class="card-content">
+                                <div class="content">Content</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--tile で色々並べられる-->
+            <!--これは公式のサンプル-->
+            <div class="section">
+                <div class="tile is-ancestor">
+                    <div class="tile is-vertical is-8">
+                        <div class="tile">
+                            <div class="tile is-parent is-vertical">
+                                <article class="tile is-child notification is-primary">
+                                    <p class="title">Vertical...</p>
+                                    <p class="subtitle">Top tile</p>
+                                </article>
+                                <article class="tile is-child notification is-warning">
+                                    <p class="title">...tiles</p>
+                                    <p class="subtitle">Bottom tile</p>
+                                </article>
+                            </div>
+                            <div class="tile is-parent">
+                                <article class="tile is-child notification is-info">
+                                    <p class="title">Middle tile</p>
+                                    <p class="subtitle">With an image</p>
+                                    <figure class="image is-4by3">
+                                        <img src="https://bulma.io/images/placeholders/640x480.png">
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="tile is-parent">
+                            <article class="tile is-child notification is-danger">
+                                <p class="title">Wide tile</p>
+                                <p class="subtitle">Aligned with the right tile</p>
+                                <div class="content">
+                                    <!-- Content -->
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-success">
+                            <div class="content">
+                                <p class="title">Tall tile</p>
+                                <p class="subtitle">With even more content</p>
+                                <div class="content">
+                                    <!-- Content -->
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--main-->
+</div>
+</body>
